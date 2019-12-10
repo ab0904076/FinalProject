@@ -1,0 +1,10 @@
+<nav>
+  <div class="topnav" id="myTopnav">
+          <a (click)="toggleHome()">Home</a>
+          <a (click)="toggleMovie()">Movies</a>
+          <a (click)="toggleTvShow()">TV Shows</a>
+  </div>
+</nav>
+<app-home *ngIf="showHome" [parent]="this"></app-home>
+<app-movies *ngIf="showMovie"></app-movies>
+<app-tvshows *ngIf="showTvShow"></app-tvshows>

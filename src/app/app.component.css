@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: sans-serif;
+    background-color: rgb(77, 8, 104);
+    margin: 0px;
+    border-bottom: solid 5px rgb(77, 8, 104);
+    padding: 0;
+}
+.topnav {
+    background-color: rgb(169, 119, 209);
+    width:inherit;
+    height:inherit;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(77, 8, 104);
+    text-align: center;
+    padding: 35px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover {
+    background-color: rgb(77, 8, 104);
+    color: rgb(169, 119, 209);
+}
+
+@media only screen and (max-width: 1110px) {
+    nav {
+        box-shadow: none;
+    }
+    
+    .topnav a {
+        width: 100vw;
+        padding: 25px;
+        font-size: 20px;
+    }
+}
